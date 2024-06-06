@@ -9,8 +9,8 @@ if __name__ == "__main__":
     File_path = r"\\t7filer04\ToolLog\Logs\A48\DSA"
     # File_path = r"C:\Users\longchao\OneDrive - Intel Corporation\Desktop\DSA_Script\DSA Log\TGB"#Logfile location
     # Output_CSV_path=r"C:\Users\longchao\OneDrive - Intel Corporation\Desktop\DSA_Script\DSA_Log.csv" #Output file location
-    ASF_CSV_path=r"\\cdATSHFS.intel.com\CDATAnalysis$\MAOATM\Longchao\DSA_Clean_compliance\ASF_LogWindow.csv"
-    Clean_record_CSV_path=r"\\cdATSHFS.intel.com\CDATAnalysis$\MAOATM\Longchao\DSA_Clean_compliance\DSA_cleanLog.csv"
+    ASF_CSV_path=r"\\cdATSHFS.intel.com\CDATAnalysis$\MAOATM\Longchao\DIA_clean_PBI_report\ASF_LogWindow.csv"
+    Clean_record_CSV_path=r"\\cdATSHFS.intel.com\CDATAnalysis$\MAOATM\Longchao\DIA_clean_PBI_report\DSA_cleanLog.csv"
     import os
     from datetime import datetime, timedelta
     ASF_toolentity = [] 

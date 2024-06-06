@@ -8,7 +8,7 @@ if __name__ == "__main__":
     File_path = r"\\t7filer04\ToolLog\Logs\A48\DSA"
     # File_path = r"C:\Users\longchao\OneDrive - Intel Corporation\Desktop\DSA_Script\DSA Log\TGB"#Logfile location
     # Output_CSV_path=r"C:\Users\longchao\OneDrive - Intel Corporation\Desktop\DSA_Script\DSA_Log.csv" #Output file location
-    Output_CSV_path=r"\\cdATSHFS.intel.com\CDATAnalysis$\MAOATM\Longchao\DXAclean\DXAclean_logrecord.csv"
+    Output_CSV_path=r"\\cdATSHFS.intel.com\CDATAnalysis$\MAOATM\Longchao\DIA_clean_PBI_report\DXAclean_logrecord.csv"
     import os
     from datetime import datetime, timedelta
     all_toolentity = []
