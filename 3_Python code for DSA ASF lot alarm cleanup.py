@@ -32,7 +32,7 @@ if __name__ == "__main__":
                 if re.match('\d{4}-\d{2}-\d{2},\d{2}:\d{2}:\d{2}.\d{3},Log Comment,Clean nozzle reminder',line):#ASF alarm
                     # print(line)
                     LogDate=datetime.strftime(datetime.fromtimestamp(os.stat(file).st_ctime).replace(hour=int(line[line.find(',')+1:line.find(',')+3]),minute=int(line[line.find(',')+4:line.find(',')+6]),second=int(line[line.find(',')+7:line.find(',')+9]),microsecond=0),'%Y-%m-%d %H:%M:%S')
-                    DSA_dooropen_close_loglist.append([all_toolentity[i],LogDate,line[line.find('ClearErr called'):].strip()])
+                    DSA_dooropen_close_loglist.append([all_toolentity[i],LogDate,line[line.find('Clean nozzle reminder'):].strip()])
                 if re.match('\d{2}:\d{2}:\d{2}.\d{4} AclPlusDrv.cpp\(\d{5}\) Door',line):#ASF door open and close
                     # print(line)
                     LogDate=datetime.strftime(datetime.fromtimestamp(os.stat(file).st_ctime).replace(hour=int(line[line.find('[')+1:line.find('[')+3]),minute=int(line[line.find('[')+4:line.find('[')+6]),second=int(line[line.find('[')+7:line.find('[')+9]),microsecond=0),'%Y-%m-%d %H:%M:%S')
